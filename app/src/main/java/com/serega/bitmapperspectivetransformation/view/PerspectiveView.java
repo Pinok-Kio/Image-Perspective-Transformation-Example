@@ -49,7 +49,7 @@ public class PerspectiveView extends View {
 
 	private void init() {
 		testImage = BitmapFactory.decodeResource(getResources(), R.mipmap.image_wall);
-		pointPaint.setColor(Color.GREEN);
+		pointPaint.setColor(Color.RED);
 		pointPaint.setAntiAlias(true);
 
 		setOnTouchListener(new OnTouchListener() {
@@ -77,7 +77,7 @@ public class PerspectiveView extends View {
 							touchY = event.getY();
 							points.get(movePointIndex).set(touchX, touchY);
 							prepareNewMatrix();
-							
+
 							invalidate();
 						}
 
